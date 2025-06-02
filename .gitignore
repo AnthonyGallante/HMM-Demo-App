@@ -1,0 +1,39 @@
+# R Session files
+.Rhistory
+.RData
+.Ruserdata
+
+# Build outputs
+/*.tar.gz
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+*.Rproj
+
+# Cache and temp files
+*_cache/
+*.utf8.md
+*.knit.md
+
+# Environment
+.Renviron
+
+# OAuth
+.httr-oauth
+
+# Log files
+*.log
+test_session_log.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# App outputs
+*.rds
+*.RDS
