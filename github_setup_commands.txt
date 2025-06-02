@@ -1,0 +1,12 @@
+# GitHub Repository Setup Commands
+# Replace YOUR_USERNAME with your actual GitHub username
+
+# Add the remote repository (run this after creating the repo on GitHub)
+git remote add origin https://github.com/YOUR_USERNAME/HMM-Demo-App.git
+
+# Push your code to GitHub
+git branch -M main
+git push -u origin main
+
+# Verify the connection
+git remote -v
