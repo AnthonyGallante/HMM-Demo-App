@@ -52,14 +52,15 @@ setup_packages <- function() {
     "shinyWidgets",
     "shinycssloaders", 
     "DT",
-    "plotly"
+    "plotly",
+    "moveHMM"
   )
   
   # HMM package (critical)
   hmm_packages <- c("hmmTMB")
   
   # Example data packages (optional but recommended)
-  data_packages <- c("moveHMM", "mHMMbayes")  
+  data_packages <- c("mHMMbayes")  
   # Install core packages
   cat("Installing core Shiny packages...\n")
   missing_core <- core_packages[!sapply(core_packages, requireNamespace, quietly = TRUE)]
