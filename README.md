@@ -1,15 +1,9 @@
 # Hidden Markov Model Demo Application
 
-A user-friendly Shiny application for building and exploring Hidden Markov Models using the `hmmTMB` package. Designed for presentations and demonstrations to audiences with no statistical modeling background.
+A simple Shiny application for building and exploring Hidden Markov Models using the `hmmTMB` package. Designed for short presentation to an audience with no statistical modeling background.
+All test cases were programmed by myself, but I utilized Claude Opus 4 for a majority of the GUI controls, as I typically do not use R in this sort of function.
 
-## 🎯 Features
-
-- **Intuitive Step-by-Step Workflow**: Guided process from data loading to results visualization
-- **Multiple Data Sources**: Support for example datasets and CSV file uploads
-- **Smart Auto-Configuration**: Automatic distribution detection and parameter initialization
-- **Rich Visualizations**: Distribution plots, time series plots, covariate effects, and diagnostic plots
-- **Plain Language Interface**: No statistical jargon - designed for general audiences
-- **Real-time Progress Tracking**: Visual indicators for each step of the modeling process
+A majority of the README file below were AI generated as well, though I find the requirements and troubleshooting sections relatively helpful. 
 
 ## 📋 Requirements
 
@@ -178,51 +172,6 @@ verify_app_structure()
 shiny::runApp(".", port = 3838)
 ```
 
-### Performance Tips
-
-- **Large datasets**: Start with fewer states and simpler models
-- **Slow fitting**: Use built-in datasets for faster demos
-- **Memory issues**: Close other R sessions and restart if needed
-## 📝 Preparing Your Demo
-
-### Before Your Presentation
-
-1. **Test Run**: Launch the app and walk through the entire workflow
-2. **Prepare Data**: Have your example datasets ready and tested
-3. **Plan Examples**: Decide which models you'll demonstrate
-4. **Check Performance**: Ensure models fit quickly enough for live demo
-
-### Suggested Demo Flow
-
-1. **Start Simple**: Use haggis data with 2 states, no covariates
-2. **Show Auto-Config**: Let the audience see the automatic setup
-3. **Visualize Results**: Focus on distribution and time series plots
-4. **Add Complexity**: Demonstrate covariates with air quality data
-5. **Interactive Exploration**: Let audience suggest parameters to try
-
-### Tips for Success
-
-- **Keep it Visual**: Focus on plots rather than technical details
-- **Tell a Story**: Explain what the hidden states might represent
-- **Handle Errors Gracefully**: Have backup plans if models fail
-- **Engage the Audience**: Ask them to interpret the plots
-
-## 🔧 Customization
-
-### Adding New Datasets
-1. Place CSV files in the main directory
-2. Add dataset option in `data_module.R`
-3. Update the `load_example_dataset()` function in `helpers.R`
-
-### Modifying the Interface
-- Edit module UI functions to change layouts
-- Modify CSS in the main `app.R` file for styling
-- Add new plot types in `visualization_module.R`
-
-### Adding Distributions
-- Extend the auto-detection logic in `helpers.R`
-- Add new distribution options in `model_config_module.R`
-- Update parameter input generators accordingly
 
 ## 📚 References
 
@@ -230,15 +179,5 @@ shiny::runApp(".", port = 3838)
 - [Shiny Framework](https://shiny.rstudio.com/)
 - [Hidden Markov Models Overview](https://en.wikipedia.org/wiki/Hidden_Markov_model)
 
-## 🤝 Support
-
-For issues specific to this demo application:
-1. Check the troubleshooting section above
-2. Verify all files are present and packages installed
-3. Test with the provided example datasets first
-
-For hmmTMB-specific questions, refer to the package documentation and examples.
 
 ---
-
-**Good luck with your presentation! 🎉**
