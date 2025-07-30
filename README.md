@@ -3,6 +3,8 @@
 A simple Shiny application for building and exploring Hidden Markov Models using the `hmmTMB` package. Designed for short presentation to an audience with no statistical modeling background.
 All test cases were programmed by myself, but I utilized Claude Opus 4 for a majority of the GUI controls, as I typically do not use R in this sort of function.
 
+Presentation slides can be found in the repository as well.
+
 A majority of the README file below were AI generated as well, though I find the requirements and troubleshooting sections relatively helpful. 
 
 ## 📋 Requirements
