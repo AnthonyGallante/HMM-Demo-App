@@ -4,7 +4,7 @@ A simple Shiny application for building and exploring Hidden Markov Models using
 Slides are available in this repository as well. <br>
 All test cases were programmed by myself, but I utilized Claude Opus 4 for a majority of the GUI controls, as I typically do not use R in this sort of function.
 
-Presentation slides can be found in the repository as well.
+Presentation slides can be found in the repository as well. Here, we introduce the topics with Bert and Ernie in a 1970s Sesame Street sketch. 
 
 A majority of the README file below were AI generated as well, though I find the requirements and troubleshooting sections relatively helpful. 
 
